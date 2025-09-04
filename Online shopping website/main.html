@@ -11,6 +11,13 @@
     <script src="https://kit.fontawesome.com/33e495fb35.js" crossorigin="anonymous"></script>
     <link rel = 'stylesheet' href = 'style.css'>
 </head>
+<script>
+  // Prevent direct access
+  if (document.referrer === "" || !document.referrer.includes("index.html")) {
+    window.location.href = "index.html"; 
+  }
+</script>
+
 <body>
     <nav class="navbar navbar-dark bg-dark" style = 'height: 100px'>
         <div class="container-fluid">
