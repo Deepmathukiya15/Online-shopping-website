@@ -163,6 +163,13 @@
     }
 }
 </style>
+<script>
+  // Prevent direct access
+  if (document.referrer === "" || (!document.referrer.includes("index.html") && !document.referrer.includes("main.html"))) {
+    window.location.href = "index.html"; 
+  }
+</script>
+
 <body>
 	
 
@@ -210,4 +217,5 @@
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.15/jquery.mask.min.js"></script>
 
 </body>
+
 </html>
